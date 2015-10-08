@@ -13,25 +13,25 @@ public class Notepad {
     }
 
     /**
-     * Добавление новой записи в блокнот
-     * @param newRecord новая запись
+     * Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕР№ Р·Р°РїРёСЃРё РІ Р±Р»РѕРєРЅРѕС‚
+     * @param newRecord РЅРѕРІР°СЏ Р·Р°РїРёСЃСЊ
      */
     public void addRecord(RecordInNotepad newRecord) {
         records.add(newRecord);
     }
 
     /**
-     * Удаление записи из блокнота
-     * @param index номер удаляемой записи
+     * РЈРґР°Р»РµРЅРёРµ Р·Р°РїРёСЃРё РёР· Р±Р»РѕРєРЅРѕС‚Р°
+     * @param index РЅРѕРјРµСЂ СѓРґР°Р»СЏРµРјРѕР№ Р·Р°РїРёСЃРё
      */
     public void deleteRecord(int index) {
         records.remove(index - 1);
     }
 
     /**
-     * Редактирование записи
-     * @param index номер редактируемой записи
-     * @param newRecord новая запись
+     * Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РїРёСЃРё
+     * @param index РЅРѕРјРµСЂ СЂРµРґР°РєС‚РёСЂСѓРµРјРѕР№ Р·Р°РїРёСЃРё
+     * @param newRecord РЅРѕРІР°СЏ Р·Р°РїРёСЃСЊ
      */
     public void editRecord(int index, RecordInNotepad newRecord) {
         records.remove(index - 1);
